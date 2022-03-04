@@ -3,8 +3,9 @@
 
 This app is able to connect to a relational database and create, read, update, delete and search (CRUD) 
 
->> HTML
->> CSS
->> JavaScript
->> JSF
->> MariaDB 
+>> HTML | 
+>> CSS | 
+>> JavaScript | 
+>> JSF | 
+>> MariaDB | 
+>> Apache Tomcat 
