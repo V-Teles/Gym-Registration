@@ -1,0 +1,11 @@
+<Context>
+
+  <Resource name="jdbc/Gym" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="gym" password="gym123"
+               passwordCharacterEncoding="UTF-8" 
+               driverClassName="org.mariadb.jdbc.Driver"
+               url="jdbc:mariadb://localhost:3306/gym_users?useSSL=false&amp;serverTimezone=UTC"/>
+
+</Context>

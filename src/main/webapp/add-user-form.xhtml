@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Add User</title>
+	
+	<h:outputStylesheet library="css" name="style.css"  />
+	<h:outputStylesheet library="css" name="add-user-style.css"  />
+	<h:outputScript library="js" name="user-validation.js" />
+
+</h:head>
+
+<h:body>
+
+	<div id="wrapper">
+		<div id="header">
+			<h2>MacFit Gym</h2>
+		</div>
+	</div>
+	
+	<div id="container">
+		<h3>Add User</h3>
+
+		<h:messages globalOnly="true" />
+
+		<h:form id="form" style="margin-top: 10px;" onsubmit="return validateForm()">
+			<h:panelGrid columns="3">
+			
+				<h:outputLabel>First name:</h:outputLabel> <h:inputText value="#{user.firstName}" id="firstName" /> <h:message for="firstName" />
+	
+				<h:outputLabel>Last name:</h:outputLabel> <h:inputText value="#{user.lastName}" id="lastName" /> <h:message for="lastName" />
+				
+				<h:outputLabel>Birthday:</h:outputLabel> <h:inputText value="#{user.birthday}" id="birthday" pattern="yyyy-mm-dd" /> <h:message for="birthday" />
+				
+				<h:outputLabel>Phone number:</h:outputLabel> <h:inputText value="#{user.phoneNumber}" id="phoneNumber"><f:convertNumber integerOnly="true" type="number" /></h:inputText> <h:message for="phoneNumber" />
+				
+				<h:outputLabel>Address:</h:outputLabel> <h:inputText value="#{user.address}" id="address" /> <h:message for="address" />
+	
+				<h:outputLabel>Email:</h:outputLabel> <h:inputText value="#{user.email}" id="email" 
+									required="true"
+            							requiredMessage="Your email is mandatory."/> 	<h:message for="email" />
+				
+				<h:outputLabel /> <h:commandButton value="Save" styleClass="save" action="#{userController.addUser(user)}"/>
+			
+			</h:panelGrid>
+		</h:form>
+
+		<div style="clear: both;"></div>
+
+		<p><h:outputLink value="gym-users.xhtml">Back to List</h:outputLink></p>
+
+	</div>	
+</h:body>
+</html>
