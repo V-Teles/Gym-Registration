@@ -1,4 +1,4 @@
-# Gym Registration APP
+# Gym Registration App
 ### Java Server Faces (JSF) 2.2
 
 This app is able to connect to a relational database and create, read, update and delete (CRUD) 
@@ -7,5 +7,5 @@ This app is able to connect to a relational database and create, read, update an
 >> CSS | 
 >> JavaScript | 
 >> JSF | 
->> MariaDB | 
+>> MariaDB (MySQL)| 
 >> Apache Tomcat 
