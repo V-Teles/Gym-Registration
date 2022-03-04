@@ -7,5 +7,5 @@ This app is able to connect to a relational database and create, read, update an
 >> CSS | 
 >> JavaScript | 
 >> JSF | 
->> MariaDB (MySQL)| 
+>> MariaDB | 
 >> Apache Tomcat 
